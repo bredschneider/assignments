@@ -7,7 +7,8 @@ Aronnax.
 
 ![Cover of the Novel](http://upload.wikimedia.org/wikipedia/commons/4/4e/20000_title_0a.jpg "2000 Leagues Under the Sea book cover")
 
-[Wikipedia entry] (http://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Sea)
+* [Wikipedia entry] (http://en.wikipedia.org/wiki/Twenty_Thousand_Leagues_Under_the_Sea)
+
 ---
 
 ##Excerpt
@@ -27,7 +28,8 @@ For some time past vessels had been met by "an enormous thing," a long object,
 spindle-shaped, occasionally phosphorescent, and infinitely larger and more rapid 
 in its movements than a whale.
 
--[From Project Gutenberg] (http://www.gutenberg.org/ebooks/164)
+* [From Project Gutenberg] (http://www.gutenberg.org/ebooks/164)
+
 ---
 
 ##About Jules Verne
