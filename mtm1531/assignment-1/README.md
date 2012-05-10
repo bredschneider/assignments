@@ -39,7 +39,7 @@ pioneered the science fiction genre. Verne wrote about space, air, and underwate
 travel before air travel and practical submarines were invented, and before practical 
 means of space travel had been devised.
 
--[Wikipedia Entry] (http://en.wikipedia.org/wiki/Jules_Verne)
+* [Wikipedia Entry] (http://en.wikipedia.org/wiki/Jules_Verne)
 
 ##Other Books by Jules Verne
 
