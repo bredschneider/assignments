@@ -1,0 +1,9 @@
+@charset "utf-8";
+/* CSS Document */
+li {
+cursor: pointer;
+}
+
+.strike-out {
+text-decoration: line-through;
+}
