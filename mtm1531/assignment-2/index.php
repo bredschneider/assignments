@@ -43,10 +43,11 @@ $total = $response * 1.13;
 	<head>
 		<meta charset="utf-8">
 		<title>Money Calculator Form</title>
+        <link href="css/general.css" rel="stylesheet">
 	</head>
 	
 	<body>
-
+	<h1> Money Calculator Form</h1>
 	<form method="post" action="index.php">
 		<label for="number1">Number 1</label>
 		<input type="number" id="number1" name="number1">
