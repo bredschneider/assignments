@@ -1,9 +1,31 @@
 @charset "utf-8";
 /* CSS Document */
+html {
+	background-color: #09F;
+	padding: 2.5em;
+}
+
+body {
+	background-color: #fff;
+	margin: 0 auto;
+	font-size: 2.5em;
+	padding: 2.5em;
+}
+
+h1 {
+	border-bottom: 2px solid #09f;
+}
+
+p {
+	border-bottom: 2px solid #09f;
+	border-left 2px solid #09f;
+}
+
 li {
-cursor: pointer;
+	cursor: pointer;
+	border-bottom: 2px solid #F00;
 }
 
 .strike-out {
-text-decoration: line-through;
+	text-decoration: line-through;
 }
