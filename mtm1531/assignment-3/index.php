@@ -18,7 +18,8 @@ require_once 'includes/form-processor.php';
 	</head>
 	
 	<body>
-	
+		<h1>Registration Form</h1>
+        <p>Register with us and you win, we win, everybody wins!</p>
 		<form method="post" action="index.php">
 			<div>
 				<label for ="name">Name<?php if(isset($error_msg['name'])) : ?><strong> is a required field.</strong><?php endif?></label>
@@ -57,8 +58,8 @@ require_once 'includes/form-processor.php';
 			</div>
 			
 			<div>
-				<input type="checkbox" id="terms" value="1">
 				<label for="terms">Accept terms?<?php if(isset($errors['terms'])) : ?> <strong class="error">You must comply!</strong><?php endif;?></label>
+                <input type="checkbox" id="terms" value="1">
 			</div>
 			
 			<button type="submit">Submit</button>

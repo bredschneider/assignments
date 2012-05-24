@@ -1,3 +1,28 @@
 @charset "utf-8";
 /* CSS Document */
 
+html {
+	background-color: #ccc;
+	font: normal 100%/1.5 sans-serif; 
+}
+
+body {
+	margin: 0 auto;
+	padding: 1em;
+	width: 30em;
+	border: medium solid #000;
+}
+
+label, 
+legend {
+	display: inline-block;
+	font: bold 100%/2em Arial, sans-serif; 
+}
+
+p {
+	font: italic 100%/1.5em Arial, sans-serif; 
+}
+
+strong {
+	color: #C00;
+}
