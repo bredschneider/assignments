@@ -22,7 +22,7 @@
 6. DELETE FROM movies 
    WHERE id = 5
 
-OPTIONAL 
+OPTIONAL Task 
  SELECT * FROM movies
  WHERE movie_title LIKE '%s%'
  ORDER BY director DESC
