@@ -1,22 +1,35 @@
 @charset "utf-8";
 /* CSS Document */
 body {
-background-color: #CCC;
-font: normal 100%/1.5 sans-serif;
+	background-color: #CCC;
+	border: thin solid #000;
+	font: normal 100%/1.5 "Arial Black", Gadget, sans-serifsans-serif;
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
 }
 
 #circle {
-height: 200px;
-margin: 3em 0 0 3em
-position: absolute;
-width: 200px;
-
-background-color: #CF0;
-border: 12px solid #000;
-border-radius: 120px;
-
-font-size: 8em;
-font-weight: bold;
-text-align: center;
-vertical-align: middle;
+	height: 200px;
+	margin: 0.5em 0 1em 1.5em;
+	left: 5px;
+	width: 200px;
+	
+	background-color: #CF0;
+	border: 12px solid #000;
+	border-radius: 120px;
+	
+	font-size: 8em;
+	font-weight: bold;
+	text-align: center;
+	vertical-align: middle;
 }
+
+label {
+	font-weight:bold;
+	text-transform: uppercase;
+}
+
+
