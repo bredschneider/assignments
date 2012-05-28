@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$error_msg ['email'] = true;
 	}
 	
-	if (mb_strlen($username) < 1 || mb_strlen($username) > 25) {
+	if (strlen($username) < 1 || strlen($username) > 25) {
 		$error_msg ['username'] = true;
 	}
 	
@@ -37,6 +37,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (empty($errors)) {
 		$thank_you = true;
 		$headers = 'From: ' . $name . ' <' . $email . '>';
-		mail('jbred034@uottawa.ca', $languages[$lang], 'From Contact Form', $notes, $headers);
+		mail($email, 'Thank you for registering', "From Jessica Bredschneider");
 	}
 }
