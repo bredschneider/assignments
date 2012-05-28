@@ -11,27 +11,27 @@ $notes = filter_input(INPUT_POST, 'notes', FILTER_SANITIZE_STRING);
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	if (empty($name)) {
-		$error_msg ['name'] = true;
+		$error_msg['name'] = true;
 	}
 	
 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-		$error_msg ['email'] = true;
+		$error_msg['email'] = true;
 	}
 	
 	if (strlen($username) < 1 || strlen($username) > 25) {
-		$error_msg ['username'] = true;
+		$error_msg['username'] = true;
 	}
 	
 	if (empty($password)) {
-		$error_msg ['password'] = true;
+		$error_msg['password'] = true;
 	}
 	
 	if (!array_key_exists($lang, $languages)) {
-		$errors['lang'] = true;
+		$error_msg['lang'] = true;
 	}
 	
 	if (!isset($_POST['terms'])) {
-		$errors['terms'] = true;
+		$error_msg['terms'] = true;
 	}
 	
 	if (empty($errors)) {
