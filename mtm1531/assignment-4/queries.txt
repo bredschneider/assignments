@@ -1,0 +1,28 @@
+1. SELECT id, movie_title, release_date, director
+   FROM movies
+
+2. SELECT id, movie_title, release_date
+   FROM movies
+   WHERE id < 4
+   ORDER BY movie_title ASC
+
+3. SELECT movie_title, director, release_date
+   FROM movies
+   ORDER BY release_date DESC
+
+4. UPDATE movies
+   SET movie_title = 'change', director = 'change'
+   WHERE id = 5
+
+5. INSERT INTO movies
+   (movie_title, release_date, director)
+   VALUES	
+   ('movie name', 20120101, 'famous director')
+
+6. DELETE FROM movies 
+   WHERE id = 5
+
+OPTIONAL 
+ SELECT * FROM movies
+ WHERE movie_title LIKE '%s%'
+ ORDER BY director DESC
