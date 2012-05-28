@@ -20,6 +20,9 @@ require_once 'includes/form-processor.php';
 	<body>
 		<h1>Registration Form</h1>
         <p>Register with us and you win, we win, everybody wins!</p>
+<?php if ($thank_you) : ?>
+<strong>Thank you for registering</strong>
+<?php else : ?>
 		<form method="post" action="index.php">
 			<div>
 				<label for ="name">Name<?php if(isset($error_msg['name'])) : ?><strong> is a required field.</strong><?php endif?></label>
@@ -58,11 +61,12 @@ require_once 'includes/form-processor.php';
 			</div>
 			
 			<div>
-				<label for="terms">Accept terms?<?php if(isset($errors['terms'])) : ?> <strong class="error">You must comply!</strong><?php endif;?></label>
-                <input type="checkbox" id="terms" value="1">
+				<input type="checkbox" id="terms" value="1"><?php if (isset($_POST['terms']))?>
+               <label for="terms">I have read and accept terms?</label><?php if(isset($errors['terms'])) : ?><strong class="error">You must comply!</strong><?php endif;?>
 			</div>
 			
 			<button type="submit">Submit</button>
+<?php endif; ?>	
 		
 	</body>
 </html>

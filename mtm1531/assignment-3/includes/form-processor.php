@@ -1,5 +1,6 @@
 <?php
 $error_msg = array();
+$thank_you = false;
 
 $name = filter_input(INPUT_POST, 'name', FILTER_SANITIZE_STRING);
 $email = filter_input(INPUT_POST, 'email', FILTER_SANITIZE_EMAIL);
@@ -34,6 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	}
 	
 	if (empty($errors)) {
+		$thank_you = true;
 		$headers = 'From: ' . $name . ' <' . $email . '>';
 		mail('jbred034@uottawa.ca', $languages[$lang], 'From Contact Form', $notes, $headers);
 	}
