@@ -16,6 +16,6 @@ $circle.css($property.val(), color);
 });
 
 $('#hide-show').on('click', function (e) {
-$circle.toggle(200);
+$circle.toggle(400);
 });
 });
