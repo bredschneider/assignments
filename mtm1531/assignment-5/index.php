@@ -16,6 +16,7 @@ $results= $sql->fetchALL();
 	<head>
 		<meta charset="utf-8">
 		<title>Movies</title>
+		<link href="css/general.css" rel="stylesheet">
 	</head>
 	
 	<body>
