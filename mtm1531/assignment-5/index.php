@@ -20,6 +20,7 @@ $results= $sql->fetchALL();
 	</head>
 	
 	<body>
+	<h1>Movies</h1>
 	<?php foreach($results as $movies):?>
 		<h2><a href="single.php?id=<?php echo $movies['id'];?>">
 		<?php echo $movies['movie_title']; ?>
