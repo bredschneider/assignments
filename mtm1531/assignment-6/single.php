@@ -17,6 +17,7 @@ $results = $sql->fetch();
 	<head>
 		<meta charset="utf-8">
 		<title><?php echo $results['movie_title']; ?></title>
+		<link href="css/general.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -28,7 +29,7 @@ $results = $sql->fetch();
 			<dd><?php echo $results['director']; ?></dd>
 		</dl>
 		
-		<a href="delete.php?id=<?php echo $id; ?>">Delete</a>
-		<a href="edit.php?id=<?php echo $id; ?>">Edit</a>
+		<a class="button" href="delete.php?id=<?php echo $id; ?>">Delete</a>
+		<a class="button" href="edit.php?id=<?php echo $id; ?>">Edit</a>
 	</body>
 </html>

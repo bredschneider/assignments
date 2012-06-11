@@ -40,6 +40,7 @@ if (empty($errors)) {
 	<head>
 		<meta charset="utf-8">
 		<title>Add a Movie</title>
+		<link href="css/general.css" rel="stylesheet">
 	</head>
 	
 	<body>

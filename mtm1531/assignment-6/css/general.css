@@ -3,17 +3,27 @@
 
 html {
 	background-color: #999;
+	margin: 10px;
 }
 
 body {
-	margin: 0 auto;
+	margin: 20px;
+	padding: 20px;
 	font: normal 100%/1.5em Arial, Helvetica, sans-serif;
-	width: 1500px;
+	width: 500px;
+	float: left;
+	border: medium solid #fff;
 }
+
 
 h1 {
 	font-weight: bold;
 	font-size: 200%;
+	height: 200px;
+	background: url(../images/reel.jpg);
+	background-position: top;
+	background-repeat: no-repeat;
+	text-align: center;
 }
 
 h2 {
@@ -33,4 +43,10 @@ dt{
 
 dd {
 	display: inline;
+}
+
+.button {
+	border: medium solid #fff;
+	background-color: #999;
+	padding: 2px;
 }

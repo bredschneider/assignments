@@ -20,7 +20,7 @@ $results= $sql->fetchALL();
 	</head>
 	
 	<body>
-	<a href="add.php">Add a New Movie</a>
+	
 	<h1>Movies</h1>
 	<?php foreach($results as $movies):?>
 		<h2><a href="single.php?id=<?php echo $movies['id'];?>">
@@ -34,5 +34,6 @@ $results= $sql->fetchALL();
 			<dd><?php echo $movies['director']; ?></dd>
 		</dl>
 	<?php endforeach; ?>
+	<a class="button" href="add.php">Add a New Movie</a>
 	</body>
 </html>
