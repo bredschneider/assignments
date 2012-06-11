@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #999;
+}
+
+body {
+	margin: 0 auto;
+	font: normal 100%/1.5em Arial, Helvetica, sans-serif;
+	width: 1500px;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 200%;
+}
+
+h2 {
+	font-weight: bold;
+	color: #30F;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+dt{
+	text-align: left;
+	font-weight: bold;
+}
+
+dd {
+	display: inline;
+}
