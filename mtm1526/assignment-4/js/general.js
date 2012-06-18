@@ -4,6 +4,8 @@ var tabsId = '#tabs';
 
 $(document).ready(function(){
 	// Preload tab on page load
+
+	
 	if($(tabsId + ' LI.current A').length > 0){
 		loadTab($(tabsId + ' LI.current A'));
 	}
@@ -17,6 +19,8 @@ $(document).ready(function(){
     	loadTab($(this));    	
         return false;
     });
+	
+	
 });
 
 function loadTab(tabObj){
@@ -30,20 +34,4 @@ function loadTab(tabObj){
     });
 }
 
-	
-	/*var tab = {
-	'Home' : 'index.html',
-	'Alexandre Despatie' : 'alex.html',
-	'Krystina Alogobo' : 'krystina.html',
-	'Simon Whitfield' : 'simon.html',
-	'Brent Hayden' : 'brent.html'
-	}
-	
-	var z=0;
-	$.each(tab,function(i){
-		var tbd = $('<li><a href="#" class="tab">'+i+'</a></li>');
-		tbd.find('a').data('page');
-		$('ul.tabcontent').append(tbd);
-	});
-	
-	var the_tab = $('.tab');*/
+
