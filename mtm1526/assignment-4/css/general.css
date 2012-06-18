@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #0CF;
+	font: normal 100%/1.5 sans-serif; 
+}
+
+body {
+	margin: 0 auto;
+	padding: 0;
+	width: 45.125em;
+}
+
+h1 {
+	color: #fff;
+	text-align:center;
+}
+
+.mytabs ul {
+	margin: 0;
+	padding: 0;
+	list-style-type:none;
+}
+
+.mytabs li {
+	display: inline;
+	border-radius: 4px 4px 0 0;
+	background-color: #0CF;
+	border: thin solid #000;
+	padding: 0.5em 1em;
+}
+
+.mytabs a,
+.mytabs a:link,
+.mytabs a:visited {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+.mytabs ul li a:hover,
+.mytabs ul li a:active,
+.mytabs ul li a:focus{
+	color: #fff;
+	background-color: #333;	
+}
+
+.mytabs .current,
+.mytabs .current:link,
+.mytabs .current:visited{
+	background-color: #006;
+	border: none;
+
+}
+
+.mytabs-container {
+	background-color: #006;
+	color: #fff;
+	position: absolute;
+	top:120px;
+	left:319px;
+	margin:0;
+	padding: 1em;
+	width: 36.6em;
+}
