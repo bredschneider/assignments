@@ -1,5 +1,5 @@
 // JavaScript Document
-var containerId = '#tabs-container';
+var emptyId = '#empty-div';
 var tabsId = '#tabs';
 
 $(document).ready(function(){
@@ -25,12 +25,12 @@ $(document).ready(function(){
 
 function loadTab(tabObj){
     if(!tabObj || !tabObj.length){ return; }
-    $(containerId).addClass('loading');
-    $(containerId).fadeOut('fast');
+    $(emptyId).addClass('loading');
+    $(emptyId).fadeOut('fast');
     
-    $(containerId).load(tabObj.attr('href'), function(){
-        $(containerId).removeClass('loading');
-        $(containerId).fadeIn('fast');
+    $(emptyId).load(tabObj.attr('href'), function(){
+        $(emptyId).removeClass('loading');
+        $(emptyId).fadeIn('fast');
     });
 }
 
