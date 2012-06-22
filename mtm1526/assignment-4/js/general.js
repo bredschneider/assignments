@@ -26,11 +26,9 @@ $(document).ready(function(){
 function loadTab(tabObj){
     if(!tabObj || !tabObj.length){ return; }
     $(emptyId).addClass('loading');
-    $(emptyId).fadeOut('fast');
-    
+       
     $(emptyId).load(tabObj.attr('href'), function(){
         $(emptyId).removeClass('loading');
-        $(emptyId).fadeIn('fast');
     });
 }
 
