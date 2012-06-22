@@ -70,31 +70,6 @@ $(document).ready(function() {
 	
 	$('#email').on('change', function(ev) {
 		var email = $(this).val();
-		emailAvailable.attr('data-event', 'unknown');
-		
-		//console.log('change');
-		if (email.length >=3 && email.length<=25) {
-			var ajax = $.post('check-email.php',{
-				'email' :email
-			});
-			
-			ajax.done(function (data) {
-				if(data == 'available') {
-					userAvailable
-					.attr('data-event', 'available')
-					.html('Available');
-				}else {
-					userAvailable
-					.attr('data-event', 'unavailable')
-					.html('Unavailable');
-				}
-			});
-		}else {
-			//console.log('unavail');
-			emailAvailable
-				.attr('data-event', 'unavailable')
-				.html('Unavailable');
-		}
 	});
 	
 	$('#city').on('change', function (ev) {
