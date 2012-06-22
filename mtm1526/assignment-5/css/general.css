@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+html {
+	background-color: #e3e3e3;	
+}
+
+.user-available {
+	font-size: 1.125em;
+}
+
+.user-available:before {
+	content: "✔"; /*copypastecharacter.com*/
+}
+
+.user-available[data-status="unavailable"]:before {
+	content: "✖"; /*copypastecharacter.com*/
+}
+
+.user-available[data-status="available"] {
+	color: #090;
+}
+
+.user-available[data-status="unavailable"] {
+	color: #f33;
+}
+
+.user-available[data-status="unchecked"] {
+	display: none;	
+}
+
+strong{
+	display: block;
+}
+
+.pass-reqs {
+	list-style-type: none;
+}
+
+.pass-reqs li:before {
+	color: #f33;
+	font-size: 1.125em;
+	content: "✖";
+}
+
+.pass-reqs li[data-state="achieved"]:before {
+	color: #090;
+	font-size: 1.125em;
+	content: "✔";
+}
+
+.email-available {
+	font-size: 1.125em;
+}
+
+.email-available:before {
+	content: "✔"; /*copypastecharacter.com*/
+}
+
+.email-available[data-event="unavailable"]:before {
+	content: "✖"; /*copypastecharacter.com*/
+}
+
+.email-available[data-event="available"] {
+	color: #090;
+}
+
+.email-available[data-event="unavailable"] {
+	color: #f33;
+}
+
+.email-available[data-event="unknown"] {
+	display: none;	
+}
