@@ -4,6 +4,7 @@ $(document).ready(function() {
 	var userAvailable = $('.user-available');
 	var emailAvailable = $('.email-available');
 	var passwordReqs = 0;
+	
 	//console.log($('#username'));
 	
 	$('.hide').hide();
@@ -75,20 +76,26 @@ $(document).ready(function() {
 	$('#city').on('change', function (ev) {
 		var city = $(this).val();
 		
-		if (city.match(/[a-z]/)) {
+		if (city.match(/[0-9]/)) {
 			
 		}
 		
-		if (city.match(/[A-Z]/)) {
+		if (city.match(/[^a-zA-Z0-9]/)) {
 			
 		}
 	});
 	
 	$('#canada').on('click', function (ev) {
 		$('.hide').show();
+		$(function() {
+		$( "tabs" ).load('provinces.html');
+		});
 	});
 	$('#america').on('click', function (ev) {
 		$('.hidden').show();
+		$(function() {
+		$( "states" ).load('states.html');
+		});
 	});
 	
 	$('form').on('submit', function (ev) {
