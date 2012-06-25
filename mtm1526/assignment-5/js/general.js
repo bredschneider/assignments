@@ -7,8 +7,6 @@ $(document).ready(function() {
 	
 	//console.log($('#username'));
 	
-	$('.hide').hide();
-	$('.hidden').hide();
 	$('#username').on('change', function (ev) {
 		var username = $(this).val();
 		
@@ -97,19 +95,33 @@ $(document).ready(function() {
 	
 	$('#city').on('change', function (ev) {
 		var city = $(this).val();
+		
+		if(city.match(/[a-z]/)) {
+		 $('.city-name').attr('data-invalid', 'ok')
+		}
+		
+		if(city.match(/[A-Z]/)) {
+		 $('.city-name').attr('data-invalid', 'ok')
+		}
+		
+		if(city.match(/[0-9]/)) {
+		 $('.city-name').attr('data-invalid', 'error')
+		}
+		
+		if(city.match(/[^a-zA-Z0-9]/)) {
+		 $('.city-name').attr('data-invalid', 'error')
+		}
 
 	});
 	
-	/*$('#canada').on('click', function (ev) {
-		$('.hide').show();
+	$('#canada').on('click', function (ev) {
 		$(function() {
-		$( '.tabs' ).load('provinces.html');
+		$( '.loadme' ).load('canada.html');
 		});
 	});
 	$('#america').on('click', function (ev) {
-		$('.hidden').show();
 		$(function() {
-		$( '.states' ).load('states.html');
+		$( '.loadme' ).load('america.html');
 		});
 	});
 	
@@ -121,5 +133,5 @@ $(document).ready(function() {
 		) {
 			ev.preventDefault()
 		}
-	});*/
+	});
 });

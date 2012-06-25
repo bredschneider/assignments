@@ -61,13 +61,14 @@ strong{
 	color: #f33;
 }
 
-.user-available[data-status="unchecked"] {
-	display: none;	
-}
-
-.city-name[data-invalid="invalid"]:before {
+.city-name[data-invalid="error"] {
 	color: #f33;
 	font-size: 1.125em;
 	content: "✖";
 }
 
+.postal-verify[data-verify="error"] {
+	color: #f33;
+	font-size: 1.125em;
+	content: "✖";
+}
