@@ -53,22 +53,21 @@ strong{
 	font-size: 1.125em;
 }
 
-.email-available:before {
-	content: "✔"; /*copypastecharacter.com*/
-}
-
-.email-available[data-event="unavailable"]:before {
-	content: "✖"; /*copypastecharacter.com*/
-}
-
-.email-available[data-event="available"] {
+.email-available[data-status="available"] {
 	color: #090;
 }
 
-.email-available[data-event="unavailable"] {
+.email-available[data-status="unavailable"] {
 	color: #f33;
 }
 
-.email-available[data-event="unknown"] {
+.user-available[data-status="unchecked"] {
 	display: none;	
 }
+
+.city-name[data-invalid="invalid"]:before {
+	color: #f33;
+	font-size: 1.125em;
+	content: "✖";
+}
+

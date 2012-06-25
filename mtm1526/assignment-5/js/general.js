@@ -71,30 +71,45 @@ $(document).ready(function() {
 	
 	$('#email').on('change', function(ev) {
 		var email = $(this).val();
+		if (email.length >=3 && email.length<=25) {
+			var ajaxEmail = $.post('check-email.php',{
+				'email' :email
+			});
+			
+			ajaxEmail.done(function (data) {
+				if(data == 'available') {
+					emailAvailable
+					.attr('data-event', 'available')
+					.html('Unknown');
+				}else {
+					emailAvailable
+					.attr('data-event', 'unavailable')
+					.html('Known');
+				}
+			});
+		}else {
+			//console.log('unavail');
+			emailAvailable
+				.attr('data-event', 'unavailable')
+				.html('Known');
+		}
 	});
 	
 	$('#city').on('change', function (ev) {
 		var city = $(this).val();
-		
-		if (city.match(/[0-9]/)) {
-			
-		}
-		
-		if (city.match(/[^a-zA-Z0-9]/)) {
-			
-		}
+
 	});
 	
-	$('#canada').on('click', function (ev) {
+	/*$('#canada').on('click', function (ev) {
 		$('.hide').show();
 		$(function() {
-		$( "tabs" ).load('provinces.html');
+		$( '.tabs' ).load('provinces.html');
 		});
 	});
 	$('#america').on('click', function (ev) {
 		$('.hidden').show();
 		$(function() {
-		$( "states" ).load('states.html');
+		$( '.states' ).load('states.html');
 		});
 	});
 	
@@ -106,5 +121,5 @@ $(document).ready(function() {
 		) {
 			ev.preventDefault()
 		}
-	});
+	});*/
 });
