@@ -5,6 +5,14 @@ html {
 	background-color: #e3e3e3;	
 }
 
+body {
+	background-color: #FCF;
+	border: thin solid #000;
+	margin: 1em auto;
+	max-width: 400px;
+	padding: 5px;
+}
+
 .user-available {
 	font-size: 1.125em;
 }
@@ -53,12 +61,16 @@ strong{
 	font-size: 1.125em;
 }
 
-.email-available[data-status="available"] {
+.email-available[data-event="unavailable"] {
 	color: #090;
 }
 
-.email-available[data-status="unavailable"] {
+.email-available[data-event="available"] {
 	color: #f33;
+}
+
+.city-name {
+	font-size: 1.125em;
 }
 
 .city-name[data-invalid="error"] {
@@ -67,7 +79,7 @@ strong{
 	content: "✖";
 }
 
-.postal-verify[data-verify="error"] {
+.postal-verify[data-postal="error"] {
 	color: #f33;
 	font-size: 1.125em;
 	content: "✖";

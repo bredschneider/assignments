@@ -93,11 +93,12 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('#city').on('change', function (ev) {
+	$('#city').on('keyup', function (ev) {
 		var city = $(this).val();
 		
 		if(city.match(/[a-z]/)) {
 		 $('.city-name').attr('data-invalid', 'ok')
+		 
 		}
 		
 		if(city.match(/[A-Z]/)) {
@@ -106,10 +107,12 @@ $(document).ready(function() {
 		
 		if(city.match(/[0-9]/)) {
 		 $('.city-name').attr('data-invalid', 'error')
+		 .html('Spelling error');
 		}
 		
 		if(city.match(/[^a-zA-Z0-9]/)) {
 		 $('.city-name').attr('data-invalid', 'error')
+		 .html('Spelling error');
 		}
 
 	});
@@ -123,6 +126,26 @@ $(document).ready(function() {
 		$(function() {
 		$( '.loadme' ).load('america.html');
 		});
+	});
+	
+
+	$('#postal-code').on('keyup', function(ev) {
+		var postal = $(this).val();
+		
+		if (postal.length = 6) {
+			$('.postal-verify').attr('data-postal', 'achieved');
+		}
+		
+		if (postal.length > 6 || postal.length < 6) {
+			$('.postal-verify').attr('data-postal', 'error')
+			.html ('Error');
+		}
+		
+		if (postal.match(/[^a-zA-Z0-9]/)) {
+			$('.postal-verify').attr('data-postal', 'error')
+			.html ('Error');
+		}
+
 	});
 	
 	$('form').on('submit', function (ev) {
