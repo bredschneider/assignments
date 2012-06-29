@@ -4,7 +4,6 @@ var tabsId = '#tabs';
 
 $(document).ready(function(){
 	// Preload tab on page load
-
 	
 	if($(tabsId + ' LI.current A').length > 0){
 		loadTab($(tabsId + ' LI.current A'));
@@ -27,7 +26,7 @@ function loadTab(tabObj){
     if(!tabObj || !tabObj.length){ return; }
     $(emptyId).addClass('loading');
        
-	   console.log(tabObj.attr('href').replace(/\?tabs\=/, '')+'.html');
+	   //console.log(tabObj.attr('href').replace(/\?tabs\=/, '')+'.html');
 	   
    $(emptyId).load(tabObj.attr('href').replace(/\?tabs\=/, '')+'.html', function(){
         $(emptyId).removeClass('loading');
